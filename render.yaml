@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: serveur-blue-magic
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python serveur.py"
+    plan: free
+
+cronJobs:
+  - name: cleanup-licenses
+    schedule: "0 * * * *" # toutes les heures
+    command: "python cleanup.py"
