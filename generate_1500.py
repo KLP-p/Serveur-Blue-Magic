@@ -5,7 +5,7 @@ import string
 import time
 
 API_URL = "https://serveur-blue-magic.onrender.com/api/admin/generate"
-ADMIN_TOKEN = "CHANGE_THIS_ADMIN_TOKEN"
+ADMIN_TOKEN = "183be6d4de5efe431efdec22c0483805a4e2b1250d9c28ded75f1bb257e6aeb8"
 
 def generate_key():
     return "-".join(
